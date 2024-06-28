@@ -1,0 +1,356 @@
+#encrypter-widget * {
+  font-family: Jura;
+  font-weight: 300;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.6)
+}
+
+input:focus::placeholder {
+  color: rgba(255, 255, 255, 0.973)
+}
+
+/* Tag-Level Styling */
+
+#encrypter-widget {
+  height: 80vh ;
+  background-image: url("images/background.jpeg");
+  background-size: 100%;
+  margin: 0;
+  width: 70%;
+}
+
+#encrypter-widget button {
+  background-color: #FFF;
+  border: none;
+  border-radius: 20px;
+  color:#48f542;
+  font-size: 1.3em;
+  font-weight: 700;
+  height: 50px;
+  margin: 0 1%;
+  min-width: 2em;
+  width: 15%;
+  z-index: 99999;
+}
+
+#encrypter-widget button:disabled {
+  background-color: gray;
+  color: rgb(76, 75, 75);
+}
+
+#encrypter-widget button:disabled:hover {
+  background-color: gray;
+  color: rgb(76, 75, 75);
+  cursor:not-allowed;
+}
+
+#encrypter-widget button:hover {
+  background-color: #48f542;
+  color:#FFF;
+  transition: 300ms;
+  cursor: pointer;
+  content: "AA";
+}
+
+#encrypter-widget div, #encrypter-widget h1, #encrypter-widget h3, #encrypter-widget section {
+  text-align: center;
+  width: 100% !important;
+  vertical-align: middle;
+}
+
+#encrypter-widget footer {
+  background: linear-gradient(0deg, rgba(255,255,255,0.9) 50%,  rgba(255,255,255,0) 100%);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  min-height: 150px;
+  position: absolute;
+  width: 100%
+}
+
+#encrypter-widget h1 {
+  font-family: Jura !important;
+  font-size: 5em;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 0;
+  margin-right: 0;
+  mix-blend-mode: unset !important;
+  text-align: center;
+  text-shadow: #FFF 1px 0 50px, #FFF 1px 0 20px, #FFF 1px 0 10px, #FFF 1px 0 2px;
+}
+
+#encrypter-widget h3 {
+  font-size: 2em;
+  color: white;
+  min-height: 1.3em;
+  text-shadow: #FFF 1px 0 50px, #FFF 1px 0 20px, #FFF 1px 0 10px, #FFF 1px 0 2px;
+}
+
+#encrypter-widget img {
+  margin: 1.5%;
+  width: 8%
+}
+
+#encrypter-widget input {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: solid 3px #FFF;
+  border-radius: 30px;
+  font-size: 3em;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-left: 60px;
+  min-height: 60px;
+  text-align: center;
+  transition: 200ms;
+  width: 40%;
+}
+
+#encrypter-widget input:focus, input:focus:hover {
+  outline: none ;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: solid 3px #48f542;
+  transition: 200ms;
+}
+
+#encrypter-widget input:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: 200ms;
+}
+
+#encrypter-widget input:default {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: solid 3px #FFF;
+  transition: 200ms;
+}
+
+#encrypter-widget p {
+  color: white;
+  font-size: 3em;
+  margin: 0;
+  min-height: 1.5em;
+  text-shadow: #FFF 1px 0 50px, #FFF 1px 0 20px, #FFF 1px 0 10px, #FFF 1px 0 2px;
+}
+
+/* Class-Level Styling */
+#encrypter-widget .input .text-input {
+  display: block;
+  text-align: center;
+}
+
+#encrypter-widget .message {
+  display:none;
+  font-size: 1em;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+#encrypter-widget .input .input-actions {
+  margin-top: 10px;
+}
+
+#encrypter-widget .input .text-input button {
+  color: #48f542;
+  min-height: 60px;
+  position: relative;
+  top:-10px;
+  width: 1%;
+}
+
+#encrypter-widget .output {
+  text-align: center;
+
+}
+
+#encrypter-widget .output h3 {
+  margin-bottom: 0;
+}
+
+#encrypter-widget .output button {
+  opacity: 0;
+}
+
+#encrypter-widget .text-output p {
+  overflow: hidden;
+  padding: 0 10%;
+  text-overflow: ellipsis !important;
+  width: 80%;
+}
+
+#encrypter-widget .disclaimer {
+  align-items: center;
+  display:flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+#encrypter-widget .disclaimer p {
+  color: gray;
+  display: inline;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* ID-Level Styling */
+
+#encrypter-widget #mobile-erase {
+  display: none;
+}
+
+#encrypter-widget #desk-erase, #encrypter-widget #mobile-erase {
+  background-color: #48f542;
+  color:#FFF;
+}
+
+#encrypter-widget #desk-erase:hover, #encrypter-widget #mobile-erase:hover {
+  background-color: #FFF;
+  color:#48f542;
+}
+#encrypter-widget i {
+  font-family: 'FontAwesome';
+}
+
+#encrypter-widget #desk-erase:hover i, #mobile-erase:hover i {
+  color: #48f542;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 500px) {
+  #encrypter-widget {
+    height: 45vh;
+  }
+
+  #encrypter-widget button {
+    border-radius: 10px;
+    font-size: 0.9em;
+    height: 30px;
+    margin: 0 0.1em;
+    min-width: 40%;
+  }
+
+  #encrypter-widget footer {
+    min-height: 200px;
+    align-items: end;
+  }
+
+  #encrypter-widget h1 {
+    font-size: 2.5em;
+    line-height: 0.8em;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+  }
+
+  #encrypter-widget h3 {
+    font-size: 1.2em;
+    min-height: none;
+    margin-top: 0.5em;
+    margin-bottom: 5px;
+  }
+
+  #encrypter-widget input {
+    border-radius: 15px;
+    font-size: 1.5em;
+    margin-left: 0;
+    min-height: none;
+    min-height:30px;
+    padding: 1% 3%;
+    width:80%;
+  }
+
+  #encrypter-widget #desk-erase {
+    display: none;
+  }
+
+  #encrypter-widget #mobile-erase {
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    height: 20px;
+    margin: 10px 35% 0 35%;
+    min-height: 0;
+    min-width: 0;
+    justify-content: center;
+    width: 30%;
+  }
+
+  #encrypter-widget #mobile-erase .fa {
+    font-size: 15px;
+    margin-right: 3px;
+  }
+
+  #encrypter-widget #mobile-erase:hover, #encrypter-widget #mobile-erase:hover i  {
+    color: white;
+    transition: 300ms;
+  }
+
+  #encrypter-widget .message {
+    font-size: 0.5em;
+    margin-top: -20px;
+    margin-bottom: 5px;
+    position: relative;
+    top: -8px;
+    width: 100%;
+  }
+
+  #encrypter-widget .input .input-actions {
+    margin-top: 0;
+  }
+
+  #encrypter-widget .text-output p {
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+
+  #encrypter-widget .disclaimer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    height: 50%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  #encrypter-widget .disclaimer img {
+    width: 100px;
+  }
+
+  #encrypter-widget .disclaimer p {
+    color: rgb(70, 70, 70);
+    font-size: 0.9em;
+    padding:0 5%;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width:501px) and (max-width:1000px) {
+  #encrypter-widget {
+    height: 70vh;
+  }
+
+  #encrypter-widget h1 {
+    font-size: 3em;
+  }
+
+  #encrypter-widget h3 {
+    font-size: 1.5em;
+  }
+
+  #encrypter-widget .text-output p {
+    font-size: 2em;
+  }
+
+
+  #encrypter-widget input {
+    width:55%;
+  }
+
+  #encrypter-widget .input .input-actions button, #encrypter-widget .output button {
+    min-width: 120px !important;
+  }
+}

@@ -1,0 +1,461 @@
+/* Encrypter stylesheet import */
+@import url("Encrypter/encrypterStyles.css");
+
+
+/* General rules */
+
+body {
+  background-image: url("images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: "Titillium Web";
+  font-style: normal;
+  display: flex;
+  flex-wrap: wrap !important;
+  justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
+  min-width: 100%;
+  user-select: none;
+}
+
+body * {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 5.5vw;
+  margin: 0;
+  text-align: left;
+  width: 40%;
+}
+
+a {
+  font-size: 1.6vw !important;
+  text-decoration: none;
+  text-shadow: rgb(132, 213, 253) 0 0 10px;
+}
+
+p {
+  color:rgba(255, 255, 255, 1) !important;
+  font-size: 1.5em;
+  text-shadow: white 0 0 5px;
+}
+
+
+/* Segment-ordered rules */
+/*------------- HEADER -------------*/
+header {
+  background-color: rgba(237, 237, 237, 0.6);
+  display: flex;
+  margin: 0;
+  width: 100%;
+}
+
+header * {
+  color: black;
+  mix-blend-mode: overlay;
+  text-shadow: white 0 0 5px;
+}
+
+header h1 {
+  padding-left:3%;
+}
+
+header h1:hover {
+  text-shadow: black 0 0 20px;
+  transition: 3000ms;
+}
+
+header a:hover {
+  color: white;
+  cursor: pointer;
+  text-shadow: rgb(0, 61, 215) 0 0 20px;
+  transition: 300ms;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+
+nav > * {
+  margin: 3%;
+}
+
+/*------------- INTRODUCTION -------------*/
+main {
+  width: 100%;
+}
+
+main > * {
+  /*background-color: rgba(237, 237, 237, 0.25);*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center !important;
+  padding: 1%;
+  padding-top: 50px;
+  margin-top: 100px;
+  height: 45vw;
+  width: 98%;
+}
+
+#intro {
+  background-color: none !important;
+  flex-wrap: nowrap;
+  height: 50vw;
+  padding-top: unset;
+  margin: 5vw auto;
+}
+
+#intro-wrap {
+  align-items: start !important;
+  display: flex;
+  height: 30vw;
+  padding: 1vw;
+  justify-content: center;
+}
+
+#intro-text {
+  align-items: center;
+  height: 100%;
+  width: 55%;
+}
+
+#intro-text h1 {
+  color: white !important;
+  font-size: 6vw;
+  position: relative;
+  top: 10vh;
+  width: fit-content;
+}
+
+#intro-text p {
+  border-radius: 20px;
+  bottom: -2vh;
+  font-size: 1.5vw;
+  height: max-content;
+  padding:2%;
+  position: relative;
+  text-align: justify;
+}
+
+#intro-img {
+  border-radius: 200px;
+  display: flex;
+  margin-left: 2vw;
+  width: 30%;
+}
+
+/*------------- ABOUT ME -------------*/
+.section-title {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50px;
+  font-size: 2rem;
+  height: fit-content;
+  margin-top: 1vw;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 40%;
+}
+
+.section-title h2 {
+  color: black;
+  font-size: 4vw;
+  font-weight: 600;
+  margin: 0;
+  mix-blend-mode: overlay;
+  text-shadow: black 0 0 5px;
+}
+
+.section-body {
+  width: 80%;
+}
+
+.section-body p {
+  text-align: center;
+}
+
+#about-body p {
+  font-size: 1.5vw;
+  height: fit-content;
+  width: 60%;
+  text-align:justify;
+}
+
+#about-gallery {
+  width: 40%
+}
+
+.about-par {
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.about-par img {
+  border-radius: 50%;
+  margin-right: 30px;
+  width: 18%;
+}
+
+#fluentu {
+  position: relative;
+  right: -100px;
+}
+
+#fluentu img {
+  width: 25%;
+}
+
+/*------------- CAROUSEL SECTIONS -------------*/
+
+/* General */
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  width: 90%;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 14.5%;
+  margin: 1%;
+  width: 500px;
+  height: min-content;
+}
+
+.icon-wrapper {
+  align-items: center;
+  aspect-ratio: 1 / 1 !important;
+  background-color: rgba(237, 237, 237, 0.6);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  width:100%;
+}
+
+.card-icon {
+  color: black !important;
+  filter:drop-shadow(0px 1px 1px white);
+  font-size: 9vw;
+  margin: 0;
+  mix-blend-mode: overlay;
+  padding: 4%;
+  text-shadow: white 0 0 5px;
+}
+
+.card:hover .card-icon {
+  text-shadow: white 0 0px 30px !important;
+  transition: 100ms;
+}
+
+.card-name {
+  font-size: 2vw;
+  text-align: center;
+}
+
+/* Skills Section */
+#js-wrapper {
+  align-items: unset;
+  justify-content: end;
+}
+
+#js-icon {
+  bottom:-30% !important;
+  font-family: "Neutraface Text";
+  font-size: 9vw;
+  font-weight: 800;
+  position: relative;
+  text-align: end;
+}
+
+#sql-icon {
+  font-size: 7vw;
+}
+
+/* Education Section */
+#qualifications-carousel, #contact-carousel {
+  justify-content: center;
+}
+
+#qualifications-carousel .card {
+  flex: 0 0 18%;
+}
+
+#qualifications-carousel img {
+  width: 80%;
+}
+
+#udg-card img {
+  width: 50%;
+}
+
+/**/
+#projects {
+  height: 90vh;
+}
+
+.contact-info-wrapper {
+  text-align: center;
+  word-break:break-all;
+}
+
+.contact-info {
+  color: white;
+  font-size: 2vw;
+  width: 100%;
+}
+
+/* Animation */
+.type-in-anim {
+  animation: typeIn 1000ms steps(20) 500ms 1 normal both,
+              blink 1000ms steps(20) 0.5s infinite normal;
+  border-right: 2px solid rgba(255,255,255,.75);
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+.fade-in-anim-slow, .in-view.fade-in-anim-slow {
+  animation: fadeIn 900ms 1.5s forwards;
+  opacity: 0;
+}
+
+.in-view.fade-in-anim-fast {
+  animation: fadeIn 900ms 200ms forwards;
+  opacity: 0;
+}
+
+.pop-out-anim-slow, .in-view.pop-out-anim-slow {
+  animation: popOut 300ms 1.6s forwards;
+  transform: scale(0);
+}
+
+.in-view.pop-out-anim-fast {
+  animation: popOut 300ms forwards;
+  transform: scale(0);
+}
+
+.float-anim1 {
+  animation: float 2s ease-in-out 300ms infinite;
+}
+
+.float-anim2 {
+  animation: float 3s ease-in-out 100ms infinite;
+}
+
+
+.in-view.float-around-anim {
+  animation: floatAround 5s 2s infinite;
+}
+
+.in-view.glow-up-anim {
+  animation: glowUp 3s 2s infinite;
+}
+
+.in-view.rotate-anim {
+  animation: rotate 5s ease-out 2s infinite;
+}
+
+.in-view.spin-anim {
+  animation: spin 2s ease-in-out 2s infinite;
+}
+
+.in-view.revolve-anim {
+  animation: revolve 5s ease-in-out 2s infinite;
+  transform: rotateY(0deg);
+}
+
+.in-view.grow-shrink-anim {
+  animation: grow 7s ease-in-out 2s infinite;
+}
+
+/* Keyframes */
+@keyframes typeIn {
+from{width: 0;}
+to{width: 6em;}
+}
+
+@keyframes blink {
+from{border-right-color: rgba(255,255,255,.75);}
+to{border-right-color: transparent;}
+}
+
+@keyframes fadeIn {
+  from{ opacity: 0; }
+  to{ opacity: 1; }
+}
+
+@keyframes popOut {
+  0%{transform:scale(0)}
+  80%{transform:scale(1.2)}
+  100%{transform:scale(1)}
+}
+
+@keyframes float {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 10px); }
+  100%   { transform: translate(0, -0px); }
+}
+
+@keyframes lightFloat {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 5px); }
+  100%   { transform: translate(0, -0px); }
+}
+
+@keyframes floatAround {
+  0% { transform: translate(0,  0px) rotate(0deg); }
+  50%  { transform: translate(0, 40px) rotate(10deg); }
+  100%   { transform: translate(0, -0px) rotate(0deg); }
+}
+
+@keyframes sway {
+  0% { transform: rotate(8deg); }
+  50% { transform: rotate(-deg); }
+  100% { transform: rotate(8deg); }
+}
+
+@keyframes glowUp {
+  0% { filter:drop-shadow(0px 1px 1px white); }
+  50% { filter:drop-shadow(0px 1px 20px black); }
+  100% { filter:drop-shadow(0px 1px 1px white); }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(-720deg); }
+  100% { transform: rotate(-720deg); }
+}
+
+@keyframes revolve {
+	0% { transform: rotateY(0deg); }
+  25% { transform: rotateY(90deg); }
+	50% { transform: rotateY(0deg); }
+  75% { transform: rotateY(90deg); }
+	100% { transform: rotateY(0deg); }
+}
+
+@keyframes grow {
+  0% { transform: scale(1); }
+  10% { transform: scale(0.75); }
+  20% { transform: scale(0.5);}
+  30% { transform: scale(0.3) }
+  55% { transform: scale(0.3);}
+  65% { transform: scale(0.5) }
+  75% { transform: scale(0.75);}
+  85% { transform: scale(1); }
+}
