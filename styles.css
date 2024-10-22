@@ -50,8 +50,10 @@ p {
 /* Segment-ordered rules */
 /*------------- HEADER -------------*/
 header {
+  align-items: center;
   background-color: rgba(237, 237, 237, 0.6);
   display: flex;
+  height: 15vh;
   margin: 0;
   width: 100%;
 }
@@ -102,12 +104,11 @@ main > * {
   padding: 1%;
   padding-top: 50px;
   margin-top: 100px;
-  height: 45vw;
   width: 98%;
 }
 
-.next-section {
-  bottom: 5vh;
+.next-section, .back-up {
+  bottom: 1vw !important;
   display: block;
   margin: 0;
   text-align: center;
@@ -115,14 +116,14 @@ main > * {
   width: 100%;
 }
 
-.next-section a {
+.next-section a, .back-up a {
   color: white;
-  font-size: 5em;
+  font-size: 5vw;
   opacity: 0.7;
   text-shadow: none;
 }
 
-.next-section:hover {
+.next-section:hover, .back-up:hover {
   cursor: pointer;
   opacity: 1;
   transition: 400ms;
@@ -132,14 +133,13 @@ main > * {
   background-color: none !important;
   display: block;
   flex-wrap: nowrap;
-  height: 100vh;
+  height: 85vh;
   padding-top: unset;
   margin: 5vw auto;
   width: 100%;
 }
 
 #intro-wrap {
-  align-items: start !important;
   display: flex;
   height: 30vw;
   padding: 1vw;
@@ -171,7 +171,7 @@ main > * {
 }
 
 #intro-img {
-  border-radius: 200px;
+  border-radius: 100%;
   display: flex;
   margin-left: 2vw;
   width: 30%;
@@ -274,7 +274,7 @@ main > * {
 }
 
 #about .next-section {
-  bottom: 10vh;
+  bottom: 9vh !important;
 }
 
 /*------------- CAROUSEL SECTIONS -------------*/
@@ -363,6 +363,9 @@ main > * {
   width: 50%;
 }
 
+#skills, #education {
+  height: 80vh;
+}
 /**/
 #projects {
   color: white;
@@ -374,7 +377,7 @@ main > * {
 }
 
 .project__container {
-  margin: 50px 0 30px;
+  margin: 50px 0 150px;
   width: 100%;
 }
 
@@ -561,4 +564,183 @@ to{border-right-color: transparent;}
   65% { transform: scale(0.5) }
   75% { transform: scale(0.75);}
   85% { transform: scale(1); }
+}
+
+@media screen and (max-width:1200px) {
+
+  header a {
+    font-size: 1.2em;
+  }
+
+  #intro {
+    height: 55vh;
+  }
+
+
+
+  .section__subheading {
+    font-size: 1.5em;
+    margin-top: 30px;
+    width: 80%;
+  }
+
+  .next-section, .back-up {
+    bottom: 0 !important;
+  }
+
+  #about .next-section {
+    bottom: 0vh !important;
+  }
+
+}
+
+@media screen and (max-width:1000px) {
+
+  #intro {
+    height: 30vh;
+  }
+
+  #about, #education, #contact {
+    height: 40vh;
+    margin-bottom: 30vh;
+  }
+
+  #skills {
+    height: 40vh;
+  }
+
+  .next-section {
+    display: none;
+  }
+
+  #about, #education {
+    margin-bottom: 30vh;
+  }
+
+  .section__subheading {
+    font-size: 1.2em;
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .project__container {
+    margin-top: 0;
+  }
+
+  .project__title {
+    font-size: 2.2em;
+  }
+
+  .project__description {
+    font-size: 1em;
+  }
+
+  .project__frame {
+    height: 100vh
+  }
+}
+
+@media screen and (max-width:800px) {
+  header a {
+    font-size: 1em;
+  }
+  #intro {
+    height: 20vh;
+  }
+
+  #about, #contact {
+    height: 30vh;
+    margin-bottom: 30vh;
+  }
+
+  #skills, #education {
+    height: 30vh;
+  }
+
+.about-par {
+    width: 95%;
+  }
+
+  #skills {
+    margin-bottom: 0;
+  }
+
+  #education {
+    margin-top: 5vh;
+  }
+}
+
+@media screen and (max-width:700px) {
+
+  header {
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: center;
+  }
+
+  header h1 {
+    margin-bottom: 10px;
+  }
+
+  header nav {
+    font-size: 1.2em;
+    width: 100%;
+  }
+
+  header a {
+    margin: 0 auto;
+  }
+
+  #intro {
+    height: 40vh;
+  }
+
+
+  #intro-wrap {
+    align-items: center !important;
+  }
+
+  #intro-text p {
+    bottom: -5vh;
+  }
+
+  #intro-text p, .about-par p {
+    font-size: 1em !important;
+  }
+
+  #intro-img {
+    position: relative;
+    bottom: -15vh;
+  }
+
+  #about {
+    height: 60vh;
+  }
+
+  #gdl img {
+    width: 30%;
+  }
+
+  #fluentu {
+    right: -50px;
+  }
+
+  #fluentu img {
+    width: 40%;
+    margin-left: 0;
+  }
+
+  .about-par {
+    width: 80%;
+  }
+
+  .project__title {
+    font-size: 1.9em;
+  }
+
+  .project__description {
+    font-size: 0.7em;
+  }
+
 }
