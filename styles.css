@@ -715,7 +715,7 @@ to{border-right-color: transparent;}
   }
 
   #about {
-    height: 60vh;
+    height: 70vh;
   }
 
   #gdl img {
@@ -743,4 +743,10 @@ to{border-right-color: transparent;}
     font-size: 0.7em;
   }
 
+}
+
+@media screen and (max-width:600px) {
+  #intro-img {
+    bottom: -20vh;
+  }
 }
