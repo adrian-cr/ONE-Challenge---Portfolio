@@ -743,6 +743,15 @@ to{border-right-color: transparent;}
     font-size: 0.7em;
   }
 
+  #projects {
+    margin-bottom: 0 !important;
+  }
+
+  #contact {
+    margin-top: 0;
+    height: 50vh !important;
+  }
+
 }
 
 @media screen and (max-width:600px) {
