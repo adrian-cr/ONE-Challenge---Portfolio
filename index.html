@@ -16,13 +16,13 @@
   <title>Adrián Camacho</title>
 </head>
 <body>
-  <header>
+  <header id="header">
     <h1>Adrián Camacho</h1>
     <nav>
       <a href="#about">About Me</a>
       <a href="#skills">Skills</a>
-      <a href="#hobbies">Hobbies</a>
-      <a href="#education">Qualifications</a>
+      <!--<a href="#hobbies">Hobbies</a>-->
+      <a href="#education">Education</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -34,11 +34,14 @@
           <h1 id="intro-title" class="type-in-anim">Hello, world! :)</h1>
           <p class="fade-in-anim-slow">My name is Adrián. I am a passion-driven language consultant looking to venture into the disruptive world of IT.
             After four years of continuous learning through academic courses, in-depth MOOCs, and hands-on projects,
-            I believe I have developed the skills and vision to land my first programming job.
-            Would you like to know more about my background? Here's a quick breakdown: <span>&nbsp;&nbsp;See More</span>
+            I believe I have developed the skills and vision to land my first programming job.<br><br>
+            Would you like to know more about my background? Here's a quick breakdown:<br>
           </p>
         </div>
           <img class="fade-in-anim-slow, pop-out-anim-slow" id="intro-img" src="images/profile.jpeg"/>
+      </div>
+      <div class="next-section float-anim1">
+        <a href="#about"><span class="fade-in-anim-slow fa-solid  fa-arrow-circle-down" ></span></a>
       </div>
     </section>
     <section id="about">
@@ -49,22 +52,22 @@
         <div class="about-par" id="gdl">
           <img class="float-anim1" src="images/gdl.webp">
           <p class="animate fade-in-anim-fast">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Fugit dolorum eos facere id, distinctio voluptate cupiditate,
-            asperiores sequi cumque reprehenderit beatae consectetur aliquid odit?
-            Tenetur quidem iusto eligendi aperiam ex!
+            I was born and raised in Guadalajara, Mexico—a city well known for its rich history and unique cuisine.
+            Guadalajara is also a major technological hub, with over 1,000 tech companies and more than 60 start-ups quartered in the city.
           </p>
         </div>
         <div class="about-par" id="fluentu">
           <img class="float-anim2" src="images/fluentu.jpg">
           <p class="animate fade-in-anim-fast">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Fugit dolorum eos facere id, distinctio voluptate cupiditate,
-            asperiores sequi cumque reprehenderit beatae consectetur aliquid odit?
-            Tenetur quidem iusto eligendi aperiam ex!
+            I currently work as a Spanish language consultant and a Spanish-English localizer at FluentU,
+            an innovative language-learning app. I've realized a programming language
+            involves almost the same learning processes as those of a human language...
+            You could even say that's why I got into coding in the first place!
           </p>
         </div>
-
+        <div class="next-section float-anim1">
+          <a href="#skills"><span class="fade-in-anim-slow fa-solid  fa-arrow-circle-down" ></span></a>
+        </div>
       </div>
     </section>
     <section id="skills">
@@ -129,8 +132,11 @@
           </div>
         </div>
       </div>
+      <div class="next-section float-anim1">
+        <a href="#education"><span class="fade-in-anim-slow fa-solid  fa-arrow-circle-down" ></span></a>
+      </div>
     </section>
-    <section id="hobbies">
+    <!--<section id="hobbies">
       <div class="section-title">
         <h2 class="animate pop-out-anim-fast animate ">Hobbies</h2>
       </div>
@@ -200,8 +206,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <section id="qualifications">
+    </section>-->
+    <section id="education">
       <div class="section-title">
         <h2 class="animate pop-out-anim-fast">Education</h2>
       </div>
@@ -247,26 +253,42 @@
           </div>
         </div>
       </div>
+      <div class="next-section float-anim1">
+        <a href="#projects"><span class="fade-in-anim-slow fa-solid  fa-arrow-circle-down" ></span></a>
+      </div>
     </section>
     <section id="projects" class="projects">
       <div class="section-title">
         <h2 class="animate pop-out-anim-fast">My Projects</h2>
       </div>
+      <h3 class="section__subheading">My most recent personal projects, where I put everything I've learned to the test!</h3>
+      <p>Scroll down to see each project in full screen.</p>
       <div class="project__container">
-        <h3 class="project__title">Hollow Knight Lo-Fi Study Timer</h3>
-        <h4 class="project__technology">Vanilla JS</h4>
-        <iframe allow="clipboard-read *; clipboard-write *" class="project__frame" src="https://adrian-cr.github.io/ONE-Project---HK-LoFi-Study-Timer/"></iframe>
+        <h4 class="project__title">Hollow Knight Lo-Fi Study Timer</h4>
+        <h5 class="project__description">A 100% Vanilla JS project that blends the power of the Pomodoro study technique and beautiful soundtracks from Team Cherry's award-winning videogame "Hollow Knight." </h5>
+        <iframe class="project__frame" src="https://adrian-cr.github.io/ONE-Project---HK-LoFi-Study-Timer/"></iframe>
       </div>
       <div class="project__container">
-        <h3 class="project__title">Simple Text Encrypter/Decrypter</h3>
-        <h4 class="project__technology">Vanilla JS</h4>
+        <h4 class="project__title">Netflix Trailers</h4>
+        <h5 class="project__description">A React-based Netflix trailer library that mimics the look and feel of the actual Netflix platform.</h5>
+        <iframe class="project__frame" src="https://adrian-cr.github.io/ONE-Challenge---Netflix-Trailer-Library/"></iframe>
+      </div>
+      <div class="project__container">
+        <h4 class="project__title">Simple Text Encrypter/Decrypter</h4>
+        <h5 class="project__description">One of my first projects. This simple program can encrypt/decrypt messages up to 120 characters long. Its algorythm—which involves tokenization, hashing and cross-mapping—accepts pretty much every character used in standard English and Spanish.</h5>
         <iframe allow="clipboard-read *; clipboard-write *" class="project__frame" src="https://adrian-cr.github.io/ONE-Challenge---Encrypter/"></iframe>
+      </div>
+      <div class="next-section float-anim1">
+        <a href="#contact">
+          <span class="fade-in-anim-slow fa-solid  fa-arrow-circle-down" ></span>
+        </a>
       </div>
     </section>
     <section id="contact">
       <div class="section-title">
         <h2 class="animate pop-out-anim-fast">Contact</h2>
       </div>
+      <h3 class="section__subheading">I'm looking forwrd to hearing from you. :) Let's get in touch!</h3>
       <div id="contact-carousel" class="carousel">
         <a id="github-card" class="card" href="https://github.com/adrian-cr" target="_blank">
           <div class="icon-wrapper">
@@ -289,8 +311,13 @@
             <i class="card-icon fa-solid fa-envelope"></i>
           </div>
           <div class="contact-info-wrapper">
-            <p class="contact-info">adrian.camacho@fluentu.com</p>
+            <p class="contact-info">adrian.camacho<br>@fluentu.com</p>
           </div>
+        </a>
+      </div>
+      <div class="next-section float-anim1">
+        <a href="#header">
+          <span class="fade-in-anim-slow fa-solid  fa-arrow-circle-up" ></span>
         </a>
       </div>
     </section>

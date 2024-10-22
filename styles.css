@@ -19,6 +19,10 @@ body {
   user-select: none;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body * {
   font-weight: 300;
 }
@@ -31,7 +35,7 @@ h1 {
 }
 
 a {
-  font-size: 1.6vw !important;
+  font-size: 1.6vw;
   text-decoration: none;
   text-shadow: rgb(132, 213, 253) 0 0 10px;
 }
@@ -102,12 +106,36 @@ main > * {
   width: 98%;
 }
 
+.next-section {
+  bottom: 5vh;
+  display: block;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.next-section a {
+  color: white;
+  font-size: 5em;
+  opacity: 0.7;
+  text-shadow: none;
+}
+
+.next-section:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: 400ms;
+}
+
 #intro {
   background-color: none !important;
+  display: block;
   flex-wrap: nowrap;
-  height: 50vw;
+  height: 100vh;
   padding-top: unset;
   margin: 5vw auto;
+  width: 100%;
 }
 
 #intro-wrap {
@@ -149,6 +177,19 @@ main > * {
   width: 30%;
 }
 
+.intro__see-more {
+  color: white;
+  opacity: 0.7;
+  text-shadow: purple 0 0 5px;
+}
+
+.intro__see-more:hover {
+  color: aqua;
+  opacity: 1;
+  text-shadow: blue 0 0 5px;
+  transition: 300ms;
+}
+
 /*------------- ABOUT ME -------------*/
 .section-title {
   background-color: rgba(255, 255, 255, 0.6);
@@ -170,12 +211,33 @@ main > * {
   text-shadow: black 0 0 5px;
 }
 
+.section__subheading {
+  color: white;
+  font-size: 1.7em;
+  height: fit-content;
+  position: relative;
+  text-align: center;
+  text-shadow: white 0 0px 30px;
+  top: -50px;
+  width: 85%;
+}
+
+.section__subheading + p {
+  font-size: 1em;
+  margin-top: -5vh;
+  margin-bottom: 10vh;
+}
+
 .section-body {
   width: 80%;
 }
 
 .section-body p {
   text-align: center;
+}
+
+#about {
+  height: 100vh;
 }
 
 #about-body p {
@@ -209,6 +271,10 @@ main > * {
 
 #fluentu img {
   width: 25%;
+}
+
+#about .next-section {
+  bottom: 10vh;
 }
 
 /*------------- CAROUSEL SECTIONS -------------*/
@@ -317,8 +383,10 @@ main > * {
   margin: 0;
 }
 
-.project__technology {
-  margin: 0;
+.project__description {
+  font-size: 1.3em;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .project__frame {
@@ -328,8 +396,13 @@ main > * {
   height: 100vh;
 }
 
+#projects .next-section {
+  bottom: -1vh;
+}
+
 #contact {
   height: 100vh;
+  vertical-align: middle;
 }
 
 .contact-info-wrapper {
@@ -339,7 +412,7 @@ main > * {
 
 .contact-info {
   color: white;
-  font-size: 2vw;
+  font-size: 1.7vw;
   width: 100%;
 }
 
