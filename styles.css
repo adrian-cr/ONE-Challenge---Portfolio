@@ -5,8 +5,8 @@
 /* General rules */
 
 body {
-  background-image: url("images/bg.jpg");
-  background-repeat: no-repeat;
+  background-image: url("images/bg2.png");
+  background-repeat: repeat;
   background-size: 100%;
   font-family: "Titillium Web";
   font-style: normal;
